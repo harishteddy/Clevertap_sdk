@@ -1,7 +1,4 @@
 package com.clevertap.clevertapsdk
-
-import android.annotation.SuppressLint
-import android.os.Bundle
 import com.clevertap.android.sdk.CleverTapAPI
 
 import com.clevertap.android.sdk.pushnotification.fcm.CTFcmMessageHandler
@@ -14,16 +11,14 @@ class MyFcmMessageListenerService : FirebaseMessagingService() {
 
     override fun onNewToken(token: String) {
         super.onNewToken(token)
-
-
+        CleverTapAPI.getDefaultInstance(this)?.apply {
+            pushFcmRegistrationId(token, true)
+        }
     }
 
     override fun onMessageReceived(message: RemoteMessage) {
         // Handle notification creation using CleverTap
         CTFcmMessageHandler().createNotification(applicationContext, message)
-
     }
-
-
 
 }

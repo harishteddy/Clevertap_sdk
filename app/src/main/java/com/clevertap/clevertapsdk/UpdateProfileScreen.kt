@@ -51,7 +51,7 @@ class UpdateProfileScreen : AppCompatActivity() {
                 )
                 cleverTap?.pushProfile(profileUpdate)
 
-                Toast.makeText(this, "User profile update", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, " profile info updated successfully", Toast.LENGTH_SHORT).show()
             }
         }
     }
