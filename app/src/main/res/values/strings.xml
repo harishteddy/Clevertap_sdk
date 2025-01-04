@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">clevertapsdk</string>
+    <string name="useremail">UserEmail</string>
+    <string name="password">UserPassword</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="cpassword">Confirm Password</string>
+    <string name="error_message_name">Username already exists.</string>
+    <string name="error_message_nofill_name">Please enter a username</string>
+    <string name="error_message_nofill_pass">Please enter a password</string>
+    <string name="error_message_notmatch">Password does not match</string>
+    <string name="error_message_invalid">Username or password is invalid</string>
+    <string name="error_message_denied">Permission denied</string>
+    <string name="message_granted">Permission granted</string>
+    <string name="img_netcore_description">Netcore Image</string>
+    <string name="already_registered">Already Registered</string>
+</resources>
